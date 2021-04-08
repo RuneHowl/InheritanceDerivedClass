@@ -1,0 +1,48 @@
+// This program uses the programmer-defined Motorcycle class. 
+#include "Motorcycle.cpp"
+#include <iostream>
+using namespace std; 
+int main()
+{
+   // Create Motorcyle objects here 
+      Motorcycle motorcycleOne;
+      Motorcycle motorcycleTwo;
+
+   // Create a boolean variable for side car status
+   bool motorcycleOne.sidecarStatus;
+bool motorcycleTwo.sidecarStatus;
+
+   
+   // Set side car status here
+   motorcycleOne.sidecarStatus = true;
+   motorcycleTwo.sidecarStatus = false;
+
+   // Set maximum speed here
+   motorcycleOne.getMaxSpeed(90);
+  motorcycleTwo.getMaxSpeed(85);
+   // Set current speed here
+   motorcycleOne.setSpeed(65);
+   motorcycleTwo.setSpeed(60);
+
+   // Accelerate motorcyles here
+   motorcycleOne.accelerate(30);
+   motorcycleTwo.accelerate(20);
+
+   // Display current speed here
+   cout << "The current speed is: " << motorcycleOne.getSpeed() << endl;
+     cout << "The current speed is: " << motorcycleTwo.getSpeed() << endl;
+ 
+   // Determine side car status and display results. 
+   if motorcycleOne.sidecarStatus{
+   cout << "This motorcycle has a side car." << endl;
+   else
+   cout << "This motorcycle does not have a side car." << endl;
+   }
+   if motorcycleTwo.sidecarStatus
+   {
+   cout << "This motorcycle has a side car." << endl;
+   else:
+   cout << "This motorcycle does not have a side car." << endl;
+   }
+   return 0;
+}
