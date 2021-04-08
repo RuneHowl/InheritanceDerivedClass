@@ -1,0 +1,30 @@
+// Motorcycle.cpp
+#include "Vehicle.cpp"
+#include <iostream>
+using namespace std; 
+
+// Write the Motorcycle class here
+class Motorcycle : public  Vehicle
+{
+  private: 
+  bool sidecar;
+  public:
+  void accelerate(double);
+  void setSidecarValue(bool);
+  bool getSidecarValue();
+  
+};
+void Motorcycle::accelerate(double mph)
+{
+  if(getSpeed() + mph > getMaxSpeed())
+  cout << "This motorcycle cannot go that fast." << endl; 
+} 
+void Motorcycle::setSidecarValue(bool value)
+{
+  sidecarValue = value;
+  return;
+}
+bool Motorcycle::getSidecarValue()
+{
+  return sidecarValue;
+}
