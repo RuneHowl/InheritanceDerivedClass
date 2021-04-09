@@ -24,7 +24,7 @@ void Motorcycle::accelerate(double mph)
 } 
 void Motorcycle::setSidecar(bool status)
 {
-  sidecarValue = status;
+  sidecar = status;
   return;
 }
 bool Motorcycle::getSidecar()
