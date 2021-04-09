@@ -10,21 +10,24 @@ class Motorcycle : public  Vehicle
   bool sidecar;
   public:
   void accelerate(double);
-  void setSidecarValue(bool);
-  bool getSidecarValue();
+  void setSidecar(bool);
+  bool getSidecar();
   
 };
 void Motorcycle::accelerate(double mph)
 {
   if(getSpeed() + mph > getMaxSpeed())
   cout << "This motorcycle cannot go that fast." << endl; 
+  
+  else (getSpeed() + mph < getMaxSpeed())
+  cout << "This motorcycle can go that fast." << endl;
 } 
-void Motorcycle::setSidecarValue(bool value)
+void Motorcycle::setSidecar(bool status)
 {
-  sidecarValue = value;
+  sidecarValue = status;
   return;
 }
-bool Motorcycle::getSidecarValue()
+bool Motorcycle::getSidecar()
 {
-  return sidecarValue;
+  return sidecar;
 }
