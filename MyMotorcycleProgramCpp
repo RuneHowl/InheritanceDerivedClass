@@ -9,17 +9,16 @@ int main()
       Motorcycle motorcycleTwo;
 
    // Create a boolean variable for side car status
-   bool motorcycleOne.sidecarStatus;
-bool motorcycleTwo.sidecarStatus;
+  bool sidecarStatus;
 
    
    // Set side car status here
-   motorcycleOne.sidecarStatus = true;
-   motorcycleTwo.sidecarStatus = false;
+   motorcycleOne.sidecarValue = true;
+   motorcycleTwo.sidecarValue = false;
 
    // Set maximum speed here
-   motorcycleOne.getMaxSpeed(90);
-  motorcycleTwo.getMaxSpeed(85);
+   motorcycleOne.setMaxSpeed(90);
+  motorcycleTwo.setMaxSpeed(85);
    // Set current speed here
    motorcycleOne.setSpeed(65);
    motorcycleTwo.setSpeed(60);
@@ -33,16 +32,16 @@ bool motorcycleTwo.sidecarStatus;
      cout << "The current speed is: " << motorcycleTwo.getSpeed() << endl;
  
    // Determine side car status and display results. 
-   if motorcycleOne.sidecarStatus{
+   sidecarStatus = motorcycleOne.getSidecar();
+   if (sidecarStatus - true) 
    cout << "This motorcycle has a side car." << endl;
    else
    cout << "This motorcycle does not have a side car." << endl;
-   }
-   if motorcycleTwo.sidecarStatus
-   {
+   sidecarStatus = motorcycleTwo.getSidecar();
+   if (sidecarStatus - true)
    cout << "This motorcycle has a side car." << endl;
-   else:
+   else
    cout << "This motorcycle does not have a side car." << endl;
-   }
+   
    return 0;
 }
