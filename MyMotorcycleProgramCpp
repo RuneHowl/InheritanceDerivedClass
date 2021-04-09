@@ -13,8 +13,10 @@ int main()
 
    
    // Set side car status here
-   motorcycleOne.sidecarValue = true;
-   motorcycleTwo.sidecarValue = false;
+   motorcycleOne.setSidecar(true);
+    motorcycleTwo.setSidecar(false);
+   motorcycleOne.sidecar = true;
+   motorcycleTwo.sidecar = false;
 
    // Set maximum speed here
    motorcycleOne.setMaxSpeed(90);
